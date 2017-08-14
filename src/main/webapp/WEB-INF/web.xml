@@ -21,4 +21,7 @@
     <welcome-file-list>
         <welcome-file>faces/index.xhtml</welcome-file>
     </welcome-file-list>
+    <listener>
+    <listener-class>com.warsoft.servlet.QuartzListener</listener-class>
+    </listener>
 </web-app>
