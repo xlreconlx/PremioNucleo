@@ -8,6 +8,7 @@ package com.warsoft.servlet;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Date;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.ParseException;
@@ -53,7 +54,7 @@ public class Conexion implements Job {
             {
               estado = EntityUtils.toString(entity);
             }
-            System.out.println("Se ha Ejecutado: "+estado);
+            System.out.println("Se ha Ejecutado: "+estado +" Fecha: "+ new Date().toString());
         } catch (IOException | URISyntaxException | ParseException e) {
             System.out.println("Ocurrio un error: "+e.toString());
         }
